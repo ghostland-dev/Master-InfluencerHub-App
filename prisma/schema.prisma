@@ -1,0 +1,131 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+  // Use Node-API by default
+  engineType = "library"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String
+  password      String
+  role          Role      @default(INFLUENCER)
+  bio           String?
+  avatar        String?
+  location      String?
+  verified      Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  // Social links
+  instagram     String?
+  youtube       String?
+  tiktok        String?
+  twitter       String?
+
+  // Relationships
+  influencerProfile    InfluencerProfile?
+  businessProfile      BusinessProfile?
+  campaigns           Campaign[]        @relation("CampaignOwner")
+  applications        Application[]
+  sentMessages        Message[]        @relation("MessageSender")
+  receivedMessages    Message[]        @relation("MessageReceiver")
+}
+
+model InfluencerProfile {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  categories      String[] // Stored as JSON array
+  followers       Int      @default(0)
+  engagementRate  Float    @default(0)
+  averageReach    Int      @default(0)
+  pricePerPost    Float    @default(0)
+  completedCampaigns Int   @default(0)
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model BusinessProfile {
+  id              String   @id @default(cuid())
+  userId          String   @unique
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  companyName     String
+  industry        String
+  website         String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Campaign {
+  id              String    @id @default(cuid())
+  title           String
+  description     String
+  budget          Float
+  startDate       DateTime
+  endDate         DateTime
+  requirements    String[]  // Stored as JSON array
+  categories      String[]  // Stored as JSON array
+  status          CampaignStatus @default(DRAFT)
+  ownerId         String
+  owner           User      @relation("CampaignOwner", fields: [ownerId], references: [id])
+  applications    Application[]
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+}
+
+model Application {
+  id          String    @id @default(cuid())
+  campaignId  String
+  campaign    Campaign  @relation(fields: [campaignId], references: [id])
+  userId      String
+  user        User      @relation(fields: [userId], references: [id])
+  status      ApplicationStatus @default(PENDING)
+  proposal    String
+  price       Float
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@unique([campaignId, userId])
+}
+
+model Message {
+  id          String    @id @default(cuid())
+  content     String
+  senderId    String
+  sender      User      @relation("MessageSender", fields: [senderId], references: [id])
+  receiverId  String
+  receiver    User      @relation("MessageReceiver", fields: [receiverId], references: [id])
+  read        Boolean   @default(false)
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+}
+
+enum Role {
+  INFLUENCER
+  BUSINESS
+  ADMIN
+}
+
+enum CampaignStatus {
+  DRAFT
+  ACTIVE
+  PAUSED
+  COMPLETED
+  CANCELLED
+}
+
+enum ApplicationStatus {
+  PENDING
+  ACCEPTED
+  REJECTED
+  COMPLETED
+}

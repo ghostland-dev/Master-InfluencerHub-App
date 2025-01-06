@@ -1,0 +1,110 @@
+{
+  "language": {
+    "changed": "Langue Modifiée",
+    "changedMessage": "La langue de l'application a été changée en {{language}}",
+    "error": "Échec du Changement de Langue",
+    "errorMessage": "Impossible de changer la langue. Veuillez réessayer."
+  },
+  "navigation": {
+    "home": "Accueil",
+    "forInfluencers": "Pour les Influenceurs",
+    "forBusinesses": "Pour les Entreprises",
+    "pricing": "Tarifs",
+    "login": "Connexion",
+    "register": "Commencer",
+    "dashboard": "Tableau de bord",
+    "profile": "Profil",
+    "settings": "Paramètres",
+    "messages": "Messages",
+    "signOut": "Déconnexion"
+  },
+  "hero": {
+    "title": "Connectez. Créez. Grandissez.",
+    "subtitle": "Rejoignez la prochaine génération du marketing d'influence",
+    "getStarted": "Commencer",
+    "learnMore": "En savoir plus"
+  },
+  "stats": {
+    "activeCreators": "Créateurs Actifs",
+    "brands": "Marques",
+    "campaigns": "Campagnes",
+    "successRate": "Taux de Réussite"
+  },
+  "features": {
+    "title": "Pourquoi Choisir InfluenceHub ?",
+    "subtitle": "Tout ce dont vous avez besoin pour réussir vos campagnes d'influence",
+    "smartMatching": {
+      "title": "Matching Intelligent",
+      "description": "Algorithme IA pour trouver les influenceurs parfaits pour votre marque"
+    },
+    "verifiedProfiles": {
+      "title": "Profils Vérifiés",
+      "description": "Tous les influenceurs sont vérifiés pour garantir authenticité et qualité"
+    },
+    "analytics": {
+      "title": "Analyses en Temps Réel",
+      "description": "Suivez les performances de campagne et le ROI avec des analyses détaillées"
+    },
+    "payments": {
+      "title": "Paiements Sécurisés",
+      "description": "Paiements et facturation automatisés pour des transactions fluides"
+    }
+  },
+  "booking": {
+    "title": "Réserver {{name}}",
+    "contentType": "Type de Contenu",
+    "startDate": "Date de Début",
+    "budget": "Budget",
+    "details": "Détails du Projet",
+    "included": {
+      "title": "Ce qui est inclus :",
+      "responseTime": "Temps de réponse 48h",
+      "communication": "Communication directe",
+      "payment": "Protection des paiements"
+    },
+    "submit": "Envoyer la Demande",
+    "cancel": "Annuler",
+    "success": "Demande Envoyée !",
+    "successMessage": "L'influenceur examinera votre demande et répondra bientôt.",
+    "error": "Échec de la Réservation",
+    "errorMessage": "Veuillez réessayer plus tard."
+  },
+  "dashboard": {
+    "overview": "Vue d'ensemble",
+    "campaigns": "Campagnes",
+    "analytics": "Analyses",
+    "messages": "Messages",
+    "settings": "Paramètres",
+    "metrics": {
+      "earnings": "Gains",
+      "activeCampaigns": "Campagnes Actives",
+      "followers": "Abonnés",
+      "engagement": "Engagement"
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "À propos d'InfluenceHub",
+      "description": "Connecter les influenceurs avec les marques pour des collaborations impactantes."
+    },
+    "forInfluencers": {
+      "title": "Pour les Influenceurs",
+      "howItWorks": "Comment ça marche",
+      "pricing": "Tarifs",
+      "successStories": "Témoignages"
+    },
+    "forBusinesses": {
+      "title": "Pour les Entreprises",
+      "findInfluencers": "Trouver des Influenceurs",
+      "campaignManagement": "Gestion des Campagnes",
+      "analytics": "Analyses"
+    },
+    "support": {
+      "title": "Support",
+      "helpCenter": "Centre d'aide",
+      "contactUs": "Nous contacter",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
+    }
+  }
+}

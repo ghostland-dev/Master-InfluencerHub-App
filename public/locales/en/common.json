@@ -1,0 +1,110 @@
+{
+  "language": {
+    "changed": "Language Changed",
+    "changedMessage": "Application language changed to {{language}}",
+    "error": "Language Change Failed",
+    "errorMessage": "Failed to change language. Please try again."
+  },
+  "navigation": {
+    "home": "Home",
+    "forInfluencers": "For Influencers",
+    "forBusinesses": "For Businesses",
+    "pricing": "Pricing",
+    "login": "Login",
+    "register": "Get Started",
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "settings": "Settings",
+    "messages": "Messages",
+    "signOut": "Sign out"
+  },
+  "hero": {
+    "title": "Connect. Create. Grow.",
+    "subtitle": "Join the next generation of influencer marketing",
+    "getStarted": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "stats": {
+    "activeCreators": "Active Creators",
+    "brands": "Brands",
+    "campaigns": "Campaigns",
+    "successRate": "Success Rate"
+  },
+  "features": {
+    "title": "Why Choose InfluenceHub?",
+    "subtitle": "Everything you need to run successful influencer campaigns",
+    "smartMatching": {
+      "title": "Smart Matching",
+      "description": "AI-powered algorithm to find the perfect influencers for your brand"
+    },
+    "verifiedProfiles": {
+      "title": "Verified Profiles",
+      "description": "All influencers are verified to ensure authenticity and quality"
+    },
+    "analytics": {
+      "title": "Real-time Analytics",
+      "description": "Track campaign performance and ROI with detailed analytics"
+    },
+    "payments": {
+      "title": "Secure Payments",
+      "description": "Automated payments and invoicing for seamless transactions"
+    }
+  },
+  "booking": {
+    "title": "Book {{name}}",
+    "contentType": "Content Type",
+    "startDate": "Start Date",
+    "budget": "Budget",
+    "details": "Project Details",
+    "included": {
+      "title": "What's included:",
+      "responseTime": "48-hour response time",
+      "communication": "Direct communication",
+      "payment": "Secure payment protection"
+    },
+    "submit": "Send Request",
+    "cancel": "Cancel",
+    "success": "Booking Request Sent!",
+    "successMessage": "The influencer will review your request and respond soon.",
+    "error": "Booking Failed",
+    "errorMessage": "Please try again later."
+  },
+  "dashboard": {
+    "overview": "Overview",
+    "campaigns": "Campaigns",
+    "analytics": "Analytics",
+    "messages": "Messages",
+    "settings": "Settings",
+    "metrics": {
+      "earnings": "Earnings",
+      "activeCampaigns": "Active Campaigns",
+      "followers": "Followers",
+      "engagement": "Engagement"
+    }
+  },
+  "footer": {
+    "about": {
+      "title": "About InfluenceHub",
+      "description": "Connecting influencers with brands for impactful collaborations."
+    },
+    "forInfluencers": {
+      "title": "For Influencers",
+      "howItWorks": "How it Works",
+      "pricing": "Pricing",
+      "successStories": "Success Stories"
+    },
+    "forBusinesses": {
+      "title": "For Businesses",
+      "findInfluencers": "Find Influencers",
+      "campaignManagement": "Campaign Management",
+      "analytics": "Analytics"
+    },
+    "support": {
+      "title": "Support",
+      "helpCenter": "Help Center",
+      "contactUs": "Contact Us",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    }
+  }
+}
