@@ -1,9 +1,6 @@
+
+# InfluenceHub 1.0.0
 ![image](https://github.com/user-attachments/assets/d1a946a8-91a8-4574-b2bd-59c58fd3c3f8)
- 
-
----
-
-# InfluenceHub
 
 ### **Connect. Create. Grow.**  
 **InfluenceHub** est une plateforme révolutionnaire qui connecte les influenceurs et les marques pour créer des collaborations significatives et fructueuses.
