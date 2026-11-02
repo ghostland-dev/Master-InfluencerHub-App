@@ -72,3 +72,10 @@ Set these environment variables in the Vercel project settings (see `.env.exampl
 
 - `VITE_API_URL`
 - `VITE_SESSION_SECRET`
+
+## Author
+
+**Ismail.M**, Software Engineer & DevOps
+
+- GitHub: [@ghostland-dev](https://github.com/ghostland-dev)
+- Website: [ismail-mouyahada.com](https://www.ismail-mouyahada.com)
