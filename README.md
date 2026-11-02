@@ -1,5 +1,7 @@
 
 # InfluenceHub 1.0.0
+
+[![CI](https://github.com/ghostland-dev/influencer-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/ghostland-dev/influencer-hub/actions/workflows/ci.yml)
 ![image](https://github.com/user-attachments/assets/d1a946a8-91a8-4574-b2bd-59c58fd3c3f8)
 
 ### **Connect. Create. Grow.**  
