@@ -61,3 +61,14 @@ Si vous avez des questions ou souhaitez discuter de nos services, n'hésitez pas
 © 2025 **MOUYAHADA-ISMAIL**. Tous droits réservés.
 
  
+
+## Deploy
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fghostland-dev%2Finfluencer-hub)
+
+Click the button to deploy your own copy on Vercel in one step.
+
+Set these environment variables in the Vercel project settings (see `.env.example`):
+
+- `VITE_API_URL`
+- `VITE_SESSION_SECRET`
